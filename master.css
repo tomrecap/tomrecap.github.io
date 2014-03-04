@@ -1,0 +1,60 @@
+@font-face{
+	font-family:'FiraSans-Light';
+	src: url(http://thomascarrolllaunchacademyapp.site88.net/fonts/fira/FiraSans-Light.woff);
+}
+
+@font-face{
+	font-family:'FiraSans-Regular';
+	src: url(http://thomascarrolllaunchacademyapp.site88.net/fonts/fira/FiraSans-Regular.woff);
+}
+
+body{
+	background:ghostwhite;
+}
+
+.main-content{
+	display:block;
+	text-align:center;
+	margin-top:10%;
+	font-family: 'Raleway', "Helvetica Neue Thin", Helvetica, sans-serif;
+}
+
+.name{
+	font-size:54pt;
+}
+
+.identifying-info{
+	font-size:20pt;
+	font-weight:bold;
+	line-height:0.45;
+}
+
+.email-punctuation{
+	font-variant:small-caps;
+}
+
+a {
+	color:black;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+@media handheld, only screen and (max-width: 560px), only screen and (max-device-width: 480px)  {
+    .main-content {
+			width: 500px;
+			margin:50px auto auto auto;
+			font-family:'FiraSans-Regular', Helvetica, sans-serif;
+		}
+		
+		.name{
+			font-size:72pt;
+		}
+		
+		.identifying-info{
+			font-size:40pt;
+			line-height:1.45;
+		}
+}
