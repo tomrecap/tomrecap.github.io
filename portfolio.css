@@ -1,0 +1,155 @@
+html, body, section, nav, ul, li, h1, h2, h3, p {
+	margin:0;
+	padding:0;
+	outline:0;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+ul, li {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+body {
+	font-family:Helvetica, sans-serif;
+	position:relative;
+	line-height:1.35;
+}
+
+/*------- clearfix ------------------*/
+.group {
+	display:table;
+	content:"";
+	clear:both;
+}
+
+/*------ nav sidebar buttons --------*/
+
+nav {
+	display:block;
+	position:fixed;
+	width:200px;
+	padding:0px 0px 500px 50px;
+	background:midnightblue;
+	color:white;
+}
+
+nav li a {
+	display:block;
+	padding: 25px 40px;
+/*	border: 1px solid #999;*/
+}
+
+nav li a:hover {
+	background:firebrick;
+	text-decoration:none;
+/*	color:black;*/
+}
+
+nav li#top-link a {
+	padding-top:75px;
+	color:transparent;
+}
+
+nav li#top-link a:hover {
+	color:white;
+}
+
+/*------ main content column --------*/
+.main-content {
+	display:block;
+	position:absolute;
+	margin-left:300px;
+	padding-top:50px;
+}
+
+h1.site-title {
+	font-size:60px;
+}
+
+h2.site-subtitle {
+	font-size:36px;
+}
+
+.main-content > section {
+	margin-bottom:500px;
+}
+
+h2.section-title {
+	font-size:36px;
+	padding-top:50px;
+	padding-bottom:25px;
+}
+
+.main-content > section > p, .main-content > section li {
+	font-size:24px;
+}
+
+#recent-projects-content li > h3.title {
+	display:block;
+	float:left;
+	width:150px;
+	margin-right:25px;
+}
+
+#recent-projects-content li > article {
+	display:block;
+	float:left;
+	margin-bottom:25px;
+	width:500px;
+}
+
+#experience-content > h3 {
+	font-size:24px;
+	padding-top:15px;
+	padding-bottom:5px;
+}
+
+#experience-content > .languages > li ,
+ #experience-content .job-block-metadata li, 
+  #experience-content article li {
+	font-size:20px;
+	padding-left:1em;
+}
+
+#experience-content .job-block-metadata li, 
+ #experience-content article li {
+	 padding-bottom:1em;
+ }
+
+#experience-content > .languages > li:before ,
+ #experience-content .job-block-metadata li:before, 
+  #experience-content article li:before {
+	content:"\00bb  ";
+}
+
+#experience-content .job-block-metadata {
+	display:block;
+	float:left;
+	width:150px;
+	margin-right:25px;
+}
+
+#experience-content .job-block-metadata h3.title {
+	font-size:24px;
+}
+
+#experience-content .job-block-metadata li {
+	font-size:18px;
+}
+
+#experience-content article {
+	display:block;
+	float:left;
+	margin-bottom:25px;
+	width:500px;
+}
