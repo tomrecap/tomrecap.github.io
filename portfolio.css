@@ -30,7 +30,7 @@ body {
 	line-height:1.35;
 }
 
-h1, h2, h3, h4, h5, h6, nav li {
+h1, h2, nav li {
   font-family: Helvetica, sans-serif;;
 }
 
@@ -108,11 +108,15 @@ h2.section-title {
 	font-size:24px;
 }
 
-#recent-projects-section li > h3.title {
+#recent-projects-section li > .title {
 	display:block;
 	float:left;
 	width:150px;
 	margin-right:25px;
+}
+
+#recent-projects-section li .subheading {
+  font-size:18px;
 }
 
 #recent-projects-section li > article {
