@@ -25,6 +25,11 @@ body {
 	line-height:1.35;
 }
 
+p {
+  max-width:500px;
+  padding-bottom:15px;
+}
+
 /*------- clearfix ------------------*/
 .group {
 	display:table;
@@ -38,7 +43,7 @@ nav {
 	display:block;
 	position:fixed;
 	width:200px;
-	padding:0px 0px 500px 50px;
+	padding:0px 0px 1000px 50px;
 	background:midnightblue;
 	color:white;
 }
@@ -115,19 +120,19 @@ h2.section-title {
 }
 
 #experience-content > .languages > li ,
- #experience-content .job-block-metadata li, 
+ #experience-content .job-block-metadata li,
   #experience-content article li {
 	font-size:20px;
 	padding-left:1em;
 }
 
-#experience-content .job-block-metadata li, 
+#experience-content .job-block-metadata li,
  #experience-content article li {
 	 padding-bottom:1em;
  }
 
 #experience-content > .languages > li:before ,
- #experience-content .job-block-metadata li:before, 
+ #experience-content .job-block-metadata li:before,
   #experience-content article li:before {
 	content:"\00bb  ";
 }
