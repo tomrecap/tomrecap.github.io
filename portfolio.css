@@ -30,7 +30,7 @@ body {
 	line-height:1.35;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav li {
   font-family: Helvetica, sans-serif;;
 }
 
@@ -79,7 +79,7 @@ nav li#top-link a:hover {
 }
 
 /*------ main content column --------*/
-.main-content {
+.main-section {
 	display:block;
 	position:absolute;
 	margin-left:300px;
@@ -94,7 +94,7 @@ h2.site-subtitle {
 	font-size:36px;
 }
 
-.main-content > section {
+.main-section > section {
 	margin-bottom:500px;
 }
 
@@ -104,64 +104,64 @@ h2.section-title {
 	padding-bottom:25px;
 }
 
-.main-content > section > p, .main-content > section li {
+.main-section > section > p, .main-section > section li {
 	font-size:24px;
 }
 
-#recent-projects-content li > h3.title {
+#recent-projects-section li > h3.title {
 	display:block;
 	float:left;
 	width:150px;
 	margin-right:25px;
 }
 
-#recent-projects-content li > article {
+#recent-projects-section li > article {
 	display:block;
 	float:left;
 	margin-bottom:25px;
 	width:500px;
 }
 
-#experience-content > h3 {
+#experience-section > h3 {
 	font-size:24px;
 	padding-top:15px;
 	padding-bottom:5px;
 }
 
-#experience-content > .languages > li ,
- #experience-content .job-block-metadata li,
-  #experience-content article li {
+#experience-section > .languages > li ,
+ #experience-section .job-block-metadata li,
+  #experience-section article li {
 	font-size:20px;
 	padding-left:1em;
 }
 
-#experience-content .job-block-metadata li,
- #experience-content article li {
+#experience-section .job-block-metadata li,
+ #experience-section article li {
 	 padding-bottom:1em;
  }
 
-#experience-content > .languages > li:before ,
- #experience-content .job-block-metadata li:before,
-  #experience-content article li:before {
+#experience-section > .languages > li:before ,
+ #experience-section .job-block-metadata li:before,
+  #experience-section article li:before {
 	content:"\00bb  ";
 }
 
-#experience-content .job-block-metadata {
+#experience-section .job-block-metadata {
 	display:block;
 	float:left;
 	width:150px;
 	margin-right:25px;
 }
 
-#experience-content .job-block-metadata h3.title {
+#experience-section .job-block-metadata h3.title {
 	font-size:24px;
 }
 
-#experience-content .job-block-metadata li {
+#experience-section .job-block-metadata li {
 	font-size:18px;
 }
 
-#experience-content article {
+#experience-section article {
 	display:block;
 	float:left;
 	margin-bottom:25px;
