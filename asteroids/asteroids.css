@@ -1,0 +1,117 @@
+@font-face{
+	font-family:'Charter';
+	src: url(http://www.thomaseliotcarroll.com/assets/fonts/charter/charter_regular-webfont.woff);
+}
+
+@font-face{
+	font-family:'Charter';
+	src: url(http://www.thomaseliotcarroll.com/assets/fonts/charter/charter_bold-webfont.woff);
+  font-weight:bold;
+}
+
+html, body, section, nav, ul, li, h1, h2, h3, p {
+	margin:0;
+	padding:0;
+	outline:0;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+ul, li {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+body {
+	font-family: 'Charter', Helvetica, sans-serif;
+	position:relative;
+	line-height:1.35;
+}
+
+h1, h2, nav li {
+/*  font-family: Helvetica, sans-serif;;*/
+}
+
+p {
+  max-width:500px;
+  padding-bottom:15px;
+}
+
+/*--------- main content ------------*/
+
+.main-content {
+  display:block;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  width:600px;
+  text-align:center;
+}
+
+h2.page-title {
+  display:block;
+  position:relative;
+	font-size:36px;
+	padding-top:50px;
+	padding-bottom:25px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+h3.page-subtitle {
+  display:block;
+  position:relative;
+	font-size:24px;
+/*  padding-top:50px;*/
+	padding-bottom:25px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+canvas {
+  border: 10px solid #333;
+/*  margin:50px 200px*/
+  display:block;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+ul {
+  display:block;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+a#new-game-button {
+  display:block;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  width:100px;
+  padding:10px 20px;
+  background:seagreen;
+  border-radius:5px;
+}
+
+a#new-game-button:hover {
+  text-decoration:none;
+  background:lightgreen;
+}
+
+a#new-game-button:active {
+  text-decoration:none;
+  background:lightgreen;
+  margin-top:2px;
+}

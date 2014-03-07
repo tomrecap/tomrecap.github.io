@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="underscore-min.js"></script>
+  <script src="keymaster.js"></script>
+  <script src="moving_object.js"></script>
+  <script src="asteroid.js"></script>
+  <script src="bullet.js"></script>
+  <script src="ship.js"></script>
+  <script src="game.js"></script>
+
+  <link rel="stylesheet" href="asteroids.css">
+  <script src="jquery-1.11.0.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="main-content">
+
+  <h2 class="page-title">Asteroids</h2>
+  <h3 class="page-subtitle"><a href="http://www.thomaseliotcarroll.com/index.html">Back to main site</a></h3>
+
+    <canvas width="400" height="400" id="canvas"></canvas>
+
+    <ul>
+      <li>
+        Move: &larr; &uarr; &rarr; &darr;
+      </li>
+      <li>
+        Shoot: (spacebar)
+      </li>
+      <li>
+        New Game: n
+      </li>
+    </ul>
+
+  <a id="new-game-button" href="#">New Game</a>
+  </div>
+
+
+
+  <script>
+
+    var newGame = function () {
+      var context = document.getElementById('canvas').getContext('2d');
+      var game = new Asteroids.Game(context);
+
+      game.start();
+      game.bindKeyHandlers();
+    };
+
+    $(document).ready(function () {
+      newGame();
+
+      $("a#new-game-button").on("click", function (event) {
+        event.preventDefault();
+        newGame();
+      });
+    });
+  </script>
+</body>
+
+</html>
