@@ -87,6 +87,10 @@ nav li#top-link a:hover {
 	color:white;
 }
 
+.active-nav-block {
+	background:firebrick;
+}
+
 /*------ main content column --------*/
 .main-section {
 	display:block;
