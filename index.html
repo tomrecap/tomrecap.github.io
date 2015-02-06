@@ -1,291 +1,310 @@
 <!DOCTYPE HTML SYSTEM>
 <html>
 
-<head>
-	<title>Thomas Eliot Carroll</title>
-	<link rel="stylesheet" href="portfolio.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script>!window.jQuery && document.write('<script src="jquery-1.11.0.min.js"><\/script>')</script>
-  <script src="javascript.js" type="text/javascript"></script>
+  <head>
+  	<title>Thomas Eliot Carroll</title>
+  	<link rel="stylesheet" href="portfolio.css">
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <link rel="icon" type="image/ico" href="assets/favicon.ico">
+  </head>
 
 
-  <link rel="icon" type="image/ico" href="assets/favicon.ico">
-</head>
+  <body class="">
+    <section class="header">
+      <div class="main-content">
+        <h1 class="site-title">Thomas Eliot Carroll</h1>
+        <h2 class="site-subtitle">Web Developer, New&nbsp;York&nbsp;City</h2>
 
 
-<body class="">
+        <nav class="group">
+        	<ul class="navigation-links">
+        		<li>
+        			<a href="#bio-section" id="bio-section-link">Bio</a>
+        		</li>
 
-<h1 class="site-title">Thomas Eliot Carroll</h1>
-<h2 class="site-subtitle">Web Developer, New&nbsp;York&nbsp;City</h2>
-<p>
-  <a href="mailto:thomas.carroll08website@gmail.com">thomas.carroll08&#8203;@&#8203;gmail.com</a>&nbsp;&nbsp;&nbsp;305&nbsp;753&nbsp;5661
-</p>
+        		<li>
+        			<a href="#projects-section" id="recent-projects-section-link">Projects</a>
+        		</li>
 
+        		<li>
+        			<a href="#experience-section" id="experience-section-link">Experience</a>
+        		</li>
 
-<nav>
-	<ul>
-		<li>
-			<a href="#bio-section" id="bio-section-link">Bio</a>
-		</li>
+        		<li>
+        			<a href="#links-section" id="links-section-link">Links</a>
+        		</li>
 
-		<li>
-			<a href="#recent-projects-section" id="recent-projects-section-link">Projects</a>
-		</li>
+        		<li>
+        			<a href="#contact-section" id="contact-section-link">Contact Me</a>
+        		</li>
+        	</ul>
+      
+        </nav>
+      </div>
+    </section>
 
-		<li>
-			<a href="#experience-section" id="experience-section-link">Experience</a>
-		</li>
+  	<section id="bio-section">
+      <div class="main-content">
+    		<h2 class="section-title">&nbsp;</h2>
+    		<p>
+          Hi, I'm a web developer located in New&nbsp;York&nbsp;City. I work on front-end development at <a href="http://recombine.com" target="_blank">Recombine</a>, a genetic testing company.
+        </p>
+        <p>
+          My previous jobs include management consulting and microfinance. I went to Haverford College, where I studied Latin and Ancient Greek and minored in physics.
+        </p>          
+      </div>
+  	</section>
 
-		<li>
-			<a href="#links-section" id="links-section-link">Links</a>
-		</li>
-	</ul>
-</nav>
+  	<section id="projects-section">
+      <div class="main-content">
+    		<h2 class="section-title">Projects</h2>
+      
+    		<ul class="projects">
+    			<li class="group">
+    				<section class="title">
+    		      <h3>Reading List</h3>
+              <p class="subheading">
+                <a href="http://thomaseliotcarroll.com/reading-list">Live</a>
+                |
+                <a href="https://github.com/tomrecap/reading-list">Source</a>
+              </p>
+            </section>
+    				<article>
+    					Just a way to keep track of books I might want to read. It&rsquo;s built with AngularJS and uses the Skeleton framework. The backend is a Google spreadsheet.
+    				</article>
+    			</li>
 
-<section class="main-section">
-	<section id="bio-section">
-		<p>
-      Hi, I'm a web developer located in New&nbsp;York&nbsp;City. I work on front-end development at <a href="recombine.com" target="_blank">Recombine</a>, a genetic testing company.
-    </p>
-    <p>
-      My previous jobs include management consulting and microfinance. I went to Haverford College, where I studied Latin and Ancient Greek and minored in physics.
-    </p>
-	</section>
+    			<li class="group">
+    				<section class="title">
+    		      <h3>Nomenclator</h3>
+              <p class="subheading">
+                <a href="http://nomenclator.thomaseliotcarroll.com">Live</a>
+                |
+                <a href="https://github.com/tomrecap/nomenclator">Source</a>
+              </p>
+            </section>
+    				<article>
+    					Vocabulary tool for reading Latin texts on a mobile device. AngularJS interface using AJAX requests to Rails API to retrieve definitions. Integrates TopCoat & Snap.js for a polished, native-like mobile interface.
+    				</article>
+    			</li>
 
-	<section id="projects-section">
-		<ul>
-			<li class="group">
-				<section class="title">
-		      <h3>Reading List</h3>
-          <p class="subheading"><a href="http://thomaseliotcarroll.com/reading-list">Live</a> | <a href="https://github.com/tomrecap/reading-list">Source</a></p>
-        </section>
-				<article>
-					Just a way to keep track of books I might want to read. It’s built with AngularJS and uses the Skeleton framework. The backend is a Google spreadsheet.
-				</article>
-			</li>
+    			<li class="group">
+    				<section class="title">
+    		      <h3>Partly Sunny</h3>
+              <p class="subheading">
+                <a href="http://partly-sunny.thomaseliotcarroll.com">Live</a>
+                |
+                <a href="https://github.com/tomrecap/partly-sunny">Source</a>
+              </p>
+            </section>
+    				<article>
+    					Weather Underground clone. Crowd-sourced weather reports and photo sharing. Uses MVC framework and custom SQL queries to dynamically calculate weather conditions from geocoded reports.
+    				</article>
+    			</li>
+				
+    			<li class="group">
+    				<section class="title">
+    		      <h3>OO-Asteroids</h3>
+              <p class="subheading">
+                <a href="asteroids/asteroids.html">Live</a>
+                |
+                <a href="https://github.com/tomrecap/OO-Asteroids">Source</a>
+              </p>
+            </section>
+    				<article>
+    					Built with object-oriented JavaScript and HTML5.
+    				</article>
+    			</li>
 
-			<li class="group">
-				<section class="title">
-		      <h3>Partly Sunny</h3>
-          <p class="subheading"><a href="http://partly-sunny.thomaseliotcarroll.com">Live</a> | <a href="https://github.com/tomrecap/partly-sunny">Source</a></p>
-        </section>
-				<article>
-					Weather Underground clone. Crowd-sourced weather reports and photo sharing. Uses MVC framework and custom SQL queries to dynamically calculate weather conditions from geocoded reports.
-				</article>
-			</li>
-			
-			<li class="group">
-				<section class="title">
-		      <h3>Nomenclator</h3>
-          <p class="subheading"><a href="http://nomenclator.thomaseliotcarroll.com">Live</a> | <a href="https://github.com/tomrecap/nomenclator">Source</a></p>
-        </section>
-				<article>
-					Vocabulary tool for reading Latin texts on a mobile device. AngularJS interface using AJAX requests to Rails API to retrieve definitions. Integrates TopCoat & Snap.js for a polished, native-like mobile interface.
-				</article>
-			</li>
-
-			<li class="group">
-				<section class="title">
-		      <h3>New Reader</h3>
-          <p class="subheading"><a href="http://new-reader.herokuapp.com">Live</a> | <a href="https://github.com/tomrecap/new-reader">Source</a></p>        </section>
-				<article>
-					This is an RSS reader, modeled on Google Reader. I built it while learning Backbone.js and CSS.
-				</article>
-			</li>
-			
-			<li class="group">
-				<section class="title">
-		      <h3>TRails</h3>
-          <p class="subheading"><a href="https://github.com/tomrecap/TRails">Source</a></p>
-        </section>
-				<article>
-					Clone of Rails MVC. Uses metaprogramming to draw routes, regexp to build params hash, and ERB to render templates. Includes session & flash.
-				</article>
-			</li>
-
-			<li class="group">
-				<section class="title">
-		      <h3>OO-Asteroids</h3>
-          <p class="subheading"><a href="asteroids/asteroids.html">Live</a> | <a href="https://github.com/tomrecap/OO-Asteroids">Source</a></p>        </section>
-				<article>
-					Built with object-oriented JavaScript and HTML5.
-				</article>
-			</li>
-
-		</ul>
-	</section>
-
-
-	<section id="experience-section">
-		<h2 class="section-title">Experience</h2>
-		<p><a href="assets/Thomas%20Carroll%20-%20Resume.pdf">R&eacute;sum&eacute;</a></p>
-
-		<h3 class="block-title">Languages & Technologies</h3>
-		<ul class="languages">
-			<li>JavaScript, especially AngularJS, Express, and Gulp</li>
-			<li>Ruby & Rails</li>
-			<li>Git</li>
-			<li>Light SQL</li>
-			<li>CSS & Sass</li>
-		</ul>
-
-		<h3 class="block-title">Business Experience</h3>
-		<ul>
-
-			<li class="group">
-				<section class="job-block-metadata">
-					<h3 class="title">
-			      <a href="http://www.recombine.con">
-              Recombine
-            </a>
-					</h3>
-					<ul>
-						<li>New York</li>
-						<li>Software Developer</li>
-						<li>2014&ndash;Present</li>
-					</ul>
-				</section>
-
-				<article>
-					<ul>
-						<li>
-              Led front-end development through complete redesign of public-facing site.
-						</li>
-						<li>
-              Built large-scale AngularJS apps consuming REST APIs to help clinics manage their patients’ genetic testing and support laboratory data processing workflows.
-						</li>
-						<li>
-              Implemented responsive, mobile-friendly designs using modular CSS.
-						</li>
-					</ul>
-				</article>
-			</li>
+    		</ul>          
+      </div>
+  	</section>
 
 
-			<li class="group">
-				<section class="job-block-metadata">
-					<h3 class="title">
-			      <a href="http://www.geocapital.ge">
-              Geocapital Microfinance
-            </a>
-					</h3>
-					<ul>
-						<li>Republic of Georgia</li>
-						<li>Business and IT Analyst</li>
-						<li>2013</li>
-					</ul>
-				</section>
+  	<section id="experience-section">
+      <div class="main-content">
+    		<h2 class="section-title">Experience</h2>
+    		<p>
+          <a href="assets/Thomas%20Carroll%20-%20Resume.pdf">Download R&eacute;sum&eacute;</a>
+        </p>
 
-				<article>
-					<ul>
-						<li>
-							Designed and programmed company-wide SharePoint workflows to standardize and streamline car loan late payment tracking.
-						</li>
-						<li>
-							Led user acceptance testing for new cash desk software. Mapped bug tracking procedure and designed training materials.
-						</li>
-						<li>
-							Built SharePoint templates and workflows to generate car loan documents.
-						</li>
-					</ul>
-				</article>
-			</li>
+    		<h3 class="block-title">Languages & Technologies</h3>
+    		<ul class="languages">
+    			<li>JavaScript, especially AngularJS, Express, and Gulp</li>
+    			<li>CSS & Sass</li>
+    			<li>Ruby & Rails</li>
+    			<li>Git</li>
+    			<li>Light SQL</li>
+    		</ul>
 
-			<li class="group">
-				<section class="job-block-metadata">
-					<h3 class="title">
-			      <a href="http://www.kraftkennedy.com/‎">
-              Kraft & Kennedy, Inc.
-            </a>
-					</h3>
-					<ul>
-						<li>New York</li>
-						<li>Business Analyst, Management Consulting Group</li>
-						<li>2012&ndash;13</li>
-					</ul>
-				</section>
+    		<h3 class="block-title">Business Experience</h3>
+    		<ul>
 
-				<article>
-					<ul>
-						<li>
-							Helped law firms identify technology investments to serve business goals.
-						</li>
-						<li>
-							Interviewed lawyers and staff about their technology needs and recommended ways to use software more efficiently.
-						</li>
-						<li>
-							Collaborated with subject matter experts to communicate technical advice to clients in clear written reports.
-						</li>
-						<li>
-							Drafted and published articles on technology issues relevant to legal field.
-						</li>
-					</ul>
-				</article>
-			</li>
-		</ul>
+    			<li class="group">
+    				<section class="job-block-metadata">
+    					<h3 class="title">
+    			      <a href="http://www.recombine.con">
+                  Recombine
+                </a>
+    					</h3>
+    					<ul>
+    						<li>New York</li>
+    						<li>Software Developer</li>
+    						<li>2014&ndash;Present</li>
+    					</ul>
+    				</section>
 
-		<h3 class="block-title">Education</h3>
-		<ul>
-
-			<li class="group">
-				<section class="job-block-metadata">
-					<h3 class="title">
-			      University of Pennsylvania
-					</h3>
-					<ul>
-						<li>2011&ndash;12</li>
-					</ul>
-				</section>
-
-				<article>
-					<ul>
-						<li>
-							Certificate in Classical Studies
-						</li>
-					</ul>
-				</article>
-			</li>
-
-			<li class="group">
-				<section class="job-block-metadata">
-					<h3 class="title">
-			      Haverford College
-					</h3>
-					<ul>
-						<li>2006&ndash;10</li>
-					</ul>
-				</section>
-
-				<article>
-					<ul>
-						<li>
-							BA with Honors, Classical Languages. Comfort Prize in Latin.
-						</li>
-						<li>
-							Physics minor, including Advanced Quantum Mechanics and Linear Algebra.
-						</li>
-					</ul>
-				</article>
-			</li>
-		</ul>
-	</section>
-
-	<section id="links-section">
-		<h2 class="section-title">Links</h2>
-		<ul>
-			<li>
-				<a href="https://github.com/tomrecap">GitHub</a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/pub/thomas-carroll/24/a3b/46b/">LinkedIn</a>
-			</li>
-		</ul>
-
-	</section>
-
-</section>
+    				<article>
+    					<ul>
+    						<li>
+                  Led front-end development through complete redesign of public-facing site.
+    						</li>
+    						<li>
+                  Built large-scale AngularJS apps consuming REST APIs to help clinics manage their patients’ genetic testing and support laboratory data processing workflows.
+    						</li>
+    						<li>
+                  Implemented responsive, mobile-friendly designs using modular CSS.
+    						</li>
+    					</ul>
+    				</article>
+    			</li>
 
 
-</body>
+    			<li class="group">
+    				<section class="job-block-metadata">
+    					<h3 class="title">
+    			      <a href="http://www.geocapital.ge">
+                  Geocapital Microfinance
+                </a>
+    					</h3>
+    					<ul>
+    						<li>Republic of Georgia</li>
+    						<li>Business and IT Analyst</li>
+    						<li>2013</li>
+    					</ul>
+    				</section>
+
+    				<article>
+    					<ul>
+    						<li>
+    							Designed and programmed company-wide SharePoint workflows to standardize and streamline car loan late payment tracking.
+    						</li>
+    						<li>
+    							Led user acceptance testing for new cash desk software. Mapped bug tracking procedure and designed training materials.
+    						</li>
+    						<li>
+    							Built SharePoint templates and workflows to generate car loan documents.
+    						</li>
+    					</ul>
+    				</article>
+    			</li>
+
+    			<li class="group">
+    				<section class="job-block-metadata">
+    					<h3 class="title">
+    			      <a href="http://www.kraftkennedy.com/‎">
+                  Kraft & Kennedy, Inc.
+                </a>
+    					</h3>
+    					<ul>
+    						<li>New York</li>
+    						<li>Business Analyst, Management Consulting Group</li>
+    						<li>2012&ndash;13</li>
+    					</ul>
+    				</section>
+
+    				<article>
+    					<ul>
+    						<li>
+    							Helped law firms identify technology investments to serve business goals.
+    						</li>
+    						<li>
+    							Interviewed lawyers and staff about their technology needs and recommended ways to use software more efficiently.
+    						</li>
+    						<li>
+    							Collaborated with subject matter experts to communicate technical advice to clients in clear written reports.
+    						</li>
+    						<li>
+    							Drafted and published articles on technology issues relevant to legal field.
+    						</li>
+    					</ul>
+    				</article>
+    			</li>
+    		</ul>
+
+    		<h3 class="block-title">Education</h3>
+    		<ul>
+
+    			<li class="group">
+    				<section class="job-block-metadata">
+    					<h3 class="title">
+    			      University of Pennsylvania
+    					</h3>
+    					<ul>
+    						<li>2011&ndash;12</li>
+    					</ul>
+    				</section>
+
+    				<article>
+    					<ul>
+    						<li>
+    							Certificate in Classical Studies
+    						</li>
+    					</ul>
+    				</article>
+    			</li>
+
+    			<li class="group">
+    				<section class="job-block-metadata">
+    					<h3 class="title">
+    			      Haverford College
+    					</h3>
+    					<ul>
+    						<li>2006&ndash;10</li>
+    					</ul>
+    				</section>
+
+    				<article>
+    					<ul>
+    						<li>
+    							BA with Honors, Classical Languages. Comfort Prize in Latin.
+    						</li>
+    						<li>
+    							Physics minor, including Advanced Quantum Mechanics and Linear Algebra.
+    						</li>
+    					</ul>
+    				</article>
+    			</li>
+    		</ul>          
+      </div>
+  	</section>
+
+  	<section id="links-section">
+      <div class="main-content">          
+    		<h2 class="section-title">Links</h2>
+    		<ul>
+    			<li>
+    				<a href="https://github.com/tomrecap">GitHub</a>
+    			</li>
+    			<li>
+    				<a href="http://www.linkedin.com/pub/thomas-carroll/24/a3b/46b/">LinkedIn</a>
+    			</li>
+    		</ul>
+      </div>
+
+  	</section>
+
+
+  	<section id="contact-section">
+      <div class="main-content">
+    		<h2 class="section-title">Contact Me</h2>
+        <p>
+          <a class="email" href="mailto:thomas.carroll08website@gmail.com">
+            thomas.carroll08&#8203;@&#8203;gmail.com
+          </a>
+        </p>
+      </div>
+  	</section>
+  </body>
 
 </html>

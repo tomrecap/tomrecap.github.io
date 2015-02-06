@@ -1,175 +1,249 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300|Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
+
 html, body, section, nav, ul, li, h1, h2, h3, p {
-	margin:0;
-	padding:0;
-	outline:0;
-	font:inherit;
-	vertical-align:baseline;
+  margin:0;
+  padding:0;
+  outline:0;
+  font:inherit;
+  vertical-align:baseline;
 }
 
 ul, li {
-	list-style:none;
+  list-style:none;
 }
 
 a {
-	text-decoration:none;
-	color:inherit;
+  text-decoration:none;
+  color:inherit;
 }
 
 a:hover {
-	text-decoration:underline;
+  text-decoration:underline;
 }
 
 body {
-	font-family: Helvetica, sans-serif;
-	position:relative;
-	line-height:1.35;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  position: relative;
+  line-height:1.3;
 }
 
 h1, h2, nav li {
-/*  font-family: Helvetica, sans-serif;;*/
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 p {
-  max-width:500px;
-  padding-bottom:15px;
+  /*  max-width:500px;*/
+  padding-bottom:26px;
 }
 
 /*------- clearfix ------------------*/
 .group {
-	display:table;
-	content:"";
-	clear:both;
+  display:table;
+  content:"";
+  clear:both;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------ Page layout --------*/
+
+body {
+}
+
+.main-content {
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+body > section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+body > section:nth-child(1) {
+  background-color: #B8E4FF;
+}
+body > section:nth-child(2) {
+  background-color: #C5FFEF;
+}
+body > section:nth-child(3) {
+  background-color: #A8E4E8;
+}
+body > section:nth-child(4) {
+  background-color: #C4FFC6;
+}
+body > section:nth-child(5) {
+  background-color: #A8E8C0;
+}
+body > section:nth-child(6) {
+  background-color: #B8E4FF;
+}
+
+/*------ Header --------*/
+
+h1.site-title {
+  font-size: 76px;
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+h2.site-subtitle {
+  font-size: 22px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+
+
+
 
 /*------ nav links buttons --------*/
 
 nav {
-	display:block;
-  
+  border-bottom: 1px solid #333;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+nav li {
+  float: left;
+  width: 20%;
+  text-align: center;
 }
 
 nav li a {
-	display:block;
-	padding: 25px 40px;
-/*	border: 1px solid #999;*/
+  display: inline-block;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid transparent;
+  font-size: 13px;
 }
 
 nav li a:hover {
-	background:firebrick;
-	text-decoration:none;
-/*	color:black;*/
+  border-bottom-color: #333;
+  text-decoration: none;
+  background: #C5FFEF;
 }
 
-nav li#top-link a {
-	padding-top:75px;
-	color:transparent;
-}
-
-nav li#top-link a:hover {
-	color:white;
-}
-
-.active-nav-block {
-	background:firebrick;
-}
 
 /*------ main content column --------*/
-.main-section {
-	display:block;
-	position:absolute;
-	margin-left:300px;
-	padding-top:50px;
-}
 
-h1.site-title {
-	font-size:60px;
-}
-
-h2.site-subtitle {
-	font-size:36px;
-}
-
-.main-section > section {
-	margin-bottom:900px;
+.main-content > section:not(.header) {
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 h2.section-title {
-	font-size:36px;
-	padding-top:50px;
-	padding-bottom:25px;
+  font-size:36px;
+  padding-top:50px;
+  padding-bottom:25px;
 }
 
-.main-section > section > p, .main-section > section li {
-	font-size:24px;
+section p,
+section li {
+  font-size:24px;
 }
 
-#recent-projects-section li > .title {
-	display:block;
-	float:left;
-	width:150px;
-	margin-right:25px;
+
+
+
+
+#projects-section li > .title {
+  display:block;
+  float:left;
+  width:150px;
+  margin-right:25px;
 }
 
-#recent-projects-section li .subheading {
+#projects-section li .subheading {
   font-size:18px;
 }
 
-#recent-projects-section li > article {
-	display:block;
-	float:left;
-	margin-bottom:25px;
-	width:500px;
+#projects-section li > article {
+  display:block;
+  float:left;
+  margin-bottom:25px;
+  width:425px;
 }
 
-#experience-section > h3.block-title {
-	font-size:24px;
-	padding-top:15px;
-	padding-bottom:15px;
+
+
+
+
+#experience-section h3.block-title {
+  font-size:24px;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 
-#experience-section > .languages > li ,
- #experience-section .job-block-metadata li,
-  #experience-section article li,
-  #links-section li {
-	font-size:20px;
-	padding-left:1em;
+#experience-section .languages > li ,
+#experience-section .job-block-metadata li,
+#experience-section article li,
+#links-section li {
+  font-size:20px;
+  padding-left:1em;
 }
 
 #experience-section .job-block-metadata li,
- #experience-section article li,
- #links-section li {
-	 padding-bottom:1em;
- }
+#experience-section article li,
+#links-section li {
+  padding-bottom:1em;
+}
 
-#experience-section > .languages > li:before ,
- #experience-section .job-block-metadata li:before,
-  #experience-section article li:before,
-  #links-section li:before {
-	content:"\00bb  ";
+#experience-section .languages > li:before ,
+#experience-section .job-block-metadata li:before,
+#experience-section article li:before,
+#links-section li:before {
+  content:"\00bb  ";
 }
 
 #experience-section .job-block-metadata {
-	display:block;
-	float:left;
-	width:150px;
-	margin-right:25px;
+  display:block;
+  float:left;
+  width:150px;
+  margin-right:25px;
 }
 
 #experience-section .job-block-metadata .title {
-	font-size:20px;
+  font-size:20px;
   padding-bottom:10px;
 }
 
 #experience-section .job-block-metadata li {
-	font-size:16px;
+  font-size:16px;
 }
 
 #experience-section article {
-	display:block;
-	float:left;
-	margin-bottom:25px;
-	width:500px;
+  display:block;
+  float:left;
+  margin-bottom:25px;
+  width:425px;
 }
+
+
+
+
+
+
 
 /*--------------- modal stuff ----------*/
 .has-active-modal .modal {
