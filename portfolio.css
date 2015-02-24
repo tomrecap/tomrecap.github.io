@@ -15,16 +15,20 @@ ul, li {
 a {
   text-decoration:none;
   color:inherit;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #e69a71;
 }
 
 a:hover {
-  text-decoration:underline;
+/*  text-decoration:underline;*/
+  background: #e69a71;
 }
 
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
   position: relative;
-  line-height:1.3;
+  line-height: 1.3;
 }
 
 h1, h2, nav li {
@@ -59,6 +63,13 @@ p {
 
 body {
 }
+body::selection,
+body::-moz-selection,
+body::-webkit-selection {
+  background-color: #e69a71;
+}
+
+
 
 .main-content {
   width: 600px;
@@ -73,8 +84,18 @@ body > section {
   min-height: 100vh;
 }
 
+body > section:nth-child(even) {
+  background-color: #3d3e41;
+  color: #f7f7f7;
+}
 
-body > section:nth-child(1) {
+body > section:nth-child(odd) {
+  background-color: #f7f7f7;
+  color: #2c2c2d;
+}
+
+
+/*body > section:nth-child(1) {
   background-color: #B8E4FF;
 }
 body > section:nth-child(2) {
@@ -92,7 +113,7 @@ body > section:nth-child(5) {
 body > section:nth-child(6) {
   background-color: #B8E4FF;
 }
-
+*/
 /*------ Header --------*/
 
 h1.site-title {
@@ -117,7 +138,7 @@ h2.site-subtitle {
 /*------ nav links buttons --------*/
 
 nav {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #2c2c2d;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 24px;
@@ -139,9 +160,9 @@ nav li a {
 }
 
 nav li a:hover {
-  border-bottom-color: #333;
+  border-bottom-color: #e69a71;
   text-decoration: none;
-  background: #C5FFEF;
+  background: #e69a71;
 }
 
 
@@ -160,9 +181,19 @@ h2.section-title {
 
 section p,
 section li {
-  font-size:24px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
+
+
+#bio-section p:first-child {
+  margin-top: 20%;
+}
+
+#bio-section p {
+  font-size: 28px;
+}
 
 
 
@@ -237,33 +268,4 @@ section li {
   float:left;
   margin-bottom:25px;
   width:425px;
-}
-
-
-
-
-
-
-
-/*--------------- modal stuff ----------*/
-.has-active-modal .modal {
-  display:block;
-}
-
-.modal {
-  display:none;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-
-.modal:before {
-  content:"";
-  display:block;
-  position:fixed;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.5);
 }
