@@ -72,7 +72,9 @@ body::-webkit-selection {
 
 
 .main-content {
-  width: 600px;
+  max-width: 600px;
+  width: 80%;
+  width: 80vw;
   position: relative;
   margin: 0 auto;
   padding-top: 24px;
@@ -138,10 +140,12 @@ h2.site-subtitle {
 /*------ nav links buttons --------*/
 
 nav {
+  position: absolute;
+  bottom: 0;
   border-bottom: 1px solid #2c2c2d;
   width: 100%;
   margin-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 nav li {
@@ -187,33 +191,59 @@ section li {
 
 
 
+section.header {
+  position: relative;
+}
+
 #bio-section p:first-child {
   margin-top: 20%;
 }
 
-#bio-section p {
-  font-size: 28px;
+@media all and (min-width: 699px) {
+  #bio-section p {
+    font-size: 28px;
+  }
 }
 
 
 
 
-#projects-section li > .title {
-  display:block;
-  float:left;
-  width:150px;
-  margin-right:25px;
+/* Lists w/ subtitles */
+
+#projects-section li > .title,
+#experience-section .job-block-metadata .title
+ {
+  display: block;
+  float: left;
+  width: 150px;
+  font-size: 24px;
+  margin-right: 25px;
+  padding-bottom: 12px;
+}
+@media all and (max-width: 699px) {
+  #projects-section li > .title,
+  #experience-section .job-block-metadata .title {
+    width: 80%;
+    width: 80vw;
+  }
 }
 
-#projects-section li .subheading {
-  font-size:18px;
+#projects-section li .subheading,
+#experience-section .job-block-metadata li {
+  font-size: 14px;
+  padding-bottom: 12px;
 }
 
-#projects-section li > article {
-  display:block;
-  float:left;
-  margin-bottom:25px;
-  width:425px;
+#projects-section li > article,
+#experience-section article,
+#experience-section article li {
+  display: block;
+  float: left;
+  font-size: 20px;
+  margin-bottom: 32px;
+  max-width: 425px;
+  width: 80%;
+  width: 80vw;
 }
 
 
@@ -221,23 +251,23 @@ section li {
 
 
 #experience-section h3.block-title {
-  font-size:24px;
-  padding-top:15px;
-  padding-bottom:15px;
+  font-size: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-#experience-section .languages > li ,
-#experience-section .job-block-metadata li,
-#experience-section article li,
-#links-section li {
-  font-size:20px;
-  padding-left:1em;
+#experience-section .languages > li {/*,*/
+/*#experience-section .job-block-metadata li,*/
+/*#experience-section article li,*/
+/*#links-section li {*/
+  font-size: 20px;
+  padding-left: 1em;
 }
 
-#experience-section .job-block-metadata li,
+/*#experience-section .job-block-metadata li,
 #experience-section article li,
-#links-section li {
-  padding-bottom:1em;
+*/#links-section li {
+  padding-bottom: 1em;
 }
 
 #experience-section .languages > li:before ,
@@ -250,15 +280,16 @@ section li {
 #experience-section .job-block-metadata {
   display:block;
   float:left;
-  width:150px;
-  margin-right:25px;
+  margin-right: 25px;
+  width: 150px;
 }
 
+
+/*
 #experience-section .job-block-metadata .title {
   font-size:20px;
   padding-bottom:10px;
 }
-
 #experience-section .job-block-metadata li {
   font-size:16px;
 }
@@ -269,3 +300,6 @@ section li {
   margin-bottom:25px;
   width:425px;
 }
+*/
+
+
