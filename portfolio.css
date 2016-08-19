@@ -214,8 +214,8 @@ section.header {
 #experience-section .job-block-metadata .title
  {
   display: block;
-/*  float: left;*/
-/*  width: 150p	x;*/
+  float: left;
+  width: 180px;
   font-size: 24px;
   margin-right: 25px;
   padding-bottom: 12px;
@@ -246,6 +246,10 @@ section.header {
   width: 80vw;
 }
 
+#experience-section article li {
+	margin-bottom: 16px;
+
+}
 
 
 
