@@ -72,7 +72,7 @@ body::-webkit-selection {
 
 
 .main-content {
-  max-width: 600px;
+  max-width: 640px;
   width: 80%;
   width: 80vw;
   position: relative;
@@ -215,7 +215,7 @@ section.header {
  {
   display: block;
   float: left;
-  width: 150px;
+/*  width: 150p	x;*/
   font-size: 24px;
   margin-right: 25px;
   padding-bottom: 12px;
@@ -256,7 +256,9 @@ section.header {
   padding-bottom: 15px;
 }
 
-#experience-section .languages > li {/*,*/
+#experience-section .languages > li,
+#experience-section .technologies > li,
+#experience-section .interests > li {/*,*/
 /*#experience-section .job-block-metadata li,*/
 /*#experience-section article li,*/
 /*#links-section li {*/
@@ -270,7 +272,9 @@ section.header {
   padding-bottom: 1em;
 }
 
-#experience-section .languages > li:before ,
+#experience-section .languages > li:before,
+#experience-section .technologies > li:before,
+#experience-section .interests > li:before,
 #experience-section .job-block-metadata li:before,
 #experience-section article li:before,
 #links-section li:before {
@@ -281,7 +285,11 @@ section.header {
   display:block;
   float:left;
   margin-right: 25px;
-  width: 150px;
+  width: 180px;
+}
+
+.journal-title {
+	font-style: italic;
 }
 
 
